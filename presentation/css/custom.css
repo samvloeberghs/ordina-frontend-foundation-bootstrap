@@ -1,0 +1,82 @@
+#ordina{
+
+}
+
+#ordina a img{
+    border:none;
+}
+#ordina img{
+    border:none;
+}
+
+#ordina h1{
+    font-size:1.6em;
+}
+
+#ordina h2{
+    font-size:1.4em;
+    background: url('../img/ordina.png') no-repeat top right;
+    border-bottom:1px solid #555;
+    padding-bottom:10px;
+    text-align:left;
+    margin-bottom:30px;
+}
+
+#ordina ul,
+#ordina ol{
+    display:block;
+    margin-left:50px;
+}
+
+#ordina ul li,
+#ordina ol li{
+    margin-bottom:10px;
+    font-size:0.9em;
+}
+
+#ordina p{
+    font-size:0.9em;
+}
+
+#ordina #start img{
+    margin-bottom:20px;
+}
+
+#ordina .emphasize{
+    padding:70px 0 0 0;
+}
+
+#ordina .emphasize h3,
+#ordina .emphasize p{
+    font-style:italic;
+}
+#ordina .emphasize img{
+    background:none;
+    box-shadow:none;
+    width:60%;
+    display:block;
+    margin:75px auto;
+}
+
+#ordina pre{
+    background:none;
+    box-shadow:none;
+}
+#ordina code{
+    padding:15px;
+    font-size:1.2em;
+}
+
+#ordina #sasslogo{
+    width:200px;
+    display:block;
+    margin:50px auto;
+}
+#ordina #sassglasses{
+    margin-top:250px;
+    width:250px;
+}
+
+#ordina pre code{
+    max-height: none;
+}
