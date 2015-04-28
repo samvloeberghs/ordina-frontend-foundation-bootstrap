@@ -12,6 +12,7 @@ module.exports = function (grunt) {
     sass: {
       dist: {
         options: {
+          includePaths: ['app/bower_components/foundation/scss'],
           outputStyle: 'extended'
         },
         files: {

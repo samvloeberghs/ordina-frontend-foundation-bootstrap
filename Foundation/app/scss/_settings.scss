@@ -18,3 +18,14 @@ $error-color:     #f04124;
 $success-color:   #43AC6A;
 $warning-color:   #f08a24;
 $info-color:      #a0d3e8;
+
+/**
+VIEWPORTS:
+----------
+*/
+
+$small-range: (0em, 30em); /* 0 - 480px */
+$medium-range: (30.064em, 48em); /* 480px - 768px */
+$large-range: (48em, 60em); /* 768px - 960px */
+$xlarge-range: (60em, 90em); /* 960px - 1440px */
+$xxlarge-range: (90em, 99999999em); /* 1440px - .. */
