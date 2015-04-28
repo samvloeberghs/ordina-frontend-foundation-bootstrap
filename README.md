@@ -21,7 +21,7 @@ contains the code of the Foundation example(s)
     npm install
     bower install
 
-run the Sass example using
+run the Foundation example using
 
     grunt
 
