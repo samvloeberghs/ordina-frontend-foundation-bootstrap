@@ -35,6 +35,14 @@ contains the code of the Bootstrap example(s)
 
     npm install
     bower install
+    
+run the Bootstrap example using
+
+    gulp serve
+    
+publish it in to distributable
+
+    gulp
 
 ### presentation
 
