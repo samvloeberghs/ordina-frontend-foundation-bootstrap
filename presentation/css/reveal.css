@@ -1151,7 +1151,8 @@ body {
   font-size: 1.5em; }
 #ordina pre {
   background: none;
-  box-shadow: none; }
+  box-shadow: none;
+  width: 100%; }
   #ordina pre code {
     padding: 15px;
     font-size: 1.2em;

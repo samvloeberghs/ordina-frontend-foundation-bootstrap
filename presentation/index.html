@@ -413,8 +413,16 @@ $row-width: rem-calc(1000); </code></pre>
                         <tr>
                             <td>
                                 <ul>
-                                    <li>TODO</li>
+                                    <li>breakpoints defined as default variables</li>
+                                    <li>variables can be adapted, so naming stays, but values change</li>
                                 </ul>
+
+                                <p><strong>default generic naming:</strong></p>
+                                <pre><code>.small-10
+.medium-6
+.large-4
+.xlarge-2
+.large-1</pre></code>
                             </td>
                             <td>
                                 <ul>
@@ -447,13 +455,16 @@ $row-width: rem-calc(1000); </code></pre>
                     <tbody>
                         <tr>
                             <td>
-                                <ul>
-                                    <li>TODO</li>
-                                </ul>
+                                <p>
+                                    When placing more than 12 columns in a row, they will wrap on a new line.
+                                    eg. small-9 + small-4 = 13 columns > 12 columns
+                                </p>
                             </td>
                             <td>
-                                When placing more than 12 columns in a row, they will wrap on a new line.
-                                eg. col-xs-9 + col-xs-4 = 13 columns > 12 columns
+                                <p>
+                                    When placing more than 12 columns in a row, they will wrap on a new line.
+                                    eg. col-xs-9 + col-xs-4 = 13 columns > 12 columns
+                                </p>
                             </td>
                         </tr>
                     </tbody>
@@ -479,7 +490,8 @@ $row-width: rem-calc(1000); </code></pre>
                         <tr>
                             <td>
                                 <ul>
-                                    <li>TODO</li>
+                                    <li>based on the parent .row, ::after pseudo element</li>
+                                    <li>clear manually , an extra HTML element</li>
                                 </ul>
                             </td>
                             <td>
@@ -508,9 +520,8 @@ $row-width: rem-calc(1000); </code></pre>
                     <tbody>
                         <tr>
                             <td>
-                                <ul>
-                                    <li>TODO</li>
-                                </ul>
+                                <p>It is possible to give a column an offset of * columns.
+                                <pre><code>.large-10 large-offset-1 column</code></pre></p>
                             </td>
                             <td>
                                 <p>It is possible to give a column an offset of * columns.
@@ -539,9 +550,15 @@ $row-width: rem-calc(1000); </code></pre>
                     <tbody>
                         <tr>
                             <td>
-                                <ul>
-                                    <li>TODO</li>
-                                </ul>
+                                <p>Ordering can be done by using push or pull.</p>
+                                <p>
+                                    Easily change the order of our built-in grid columns with some classes.</p>
+
+                                    <pre><code>small-10 small-push-2 columns</code></pre>
+                                    and
+                                    <pre><code>small-2 small-pull-10 columns</code></pre>
+                                    modifier classes.
+                                </p>
                             </td>
                             <td>
                                 <p>Ordering can be done by using push or pull.</p>
@@ -570,9 +587,11 @@ $row-width: rem-calc(1000); </code></pre>
                     <tbody>
                         <tr>
                             <td>
-                                <ul>
-                                    <li>TODO</li>
-                                </ul>
+                                <p>A set of variables and mixins can be customised and used within Foundation.</p>
+                                <p>Example:</p>
+                                <p><pre><code>$row-width: rem-calc(1000);
+$column-gutter: rem-calc(30);
+$total-columns: 12 ;</code></pre></p>
                             </td>
                             <td>
                                 <p>A set of variables and mixins can be customised and used within Bootstrap.</p>
@@ -591,13 +610,13 @@ $row-width: rem-calc(1000); </code></pre>
 
         <!-- utilities -->
         <section>
-            
+
             <section>
 
                 <h2>
                     Utilities
                 </h2>
-                
+
                 <ul>
                     <li>General visibility rules</li>
                     <li>Print styles</li>
