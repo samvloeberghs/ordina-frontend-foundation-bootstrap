@@ -1117,7 +1117,7 @@ body {
   border: none;
   display: block;
   margin: 0 auto; }
-  #ordina img#logo {
+  #ordina img.logo {
     margin-bottom: 40px; }
   #ordina img#zurb {
     background: #ddd;
@@ -1168,11 +1168,9 @@ body {
     width: 50%; }
   #ordina .table-full ul, #ordina .table-full ol {
     margin: 30px 0 0 30px; }
-
-#thanks {
+#ordina #thanks {
   height: 200px;
   display: block;
   margin: 0 auto; }
-
-#thanks img {
+#ordina #thanks img {
   border-radius: 500px; }
