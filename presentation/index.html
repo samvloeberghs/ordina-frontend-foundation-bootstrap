@@ -214,7 +214,10 @@
                         <tr>
                             <td>
                                 <ul>
-                                    <li>TODO</li>
+                                    <li>Predefined grid classes: <pre><code>.small-6 .columns</code></pre></li>
+                                    <li>Columns must have a row directly as parent</li>
+                                    <li>Columns have a gutters based on the default fontsize(16px):<br />rem-calc(30);</li>
+                                    <li>Always place columns in .rows when deepnesting</li>
                                 </ul>
                             </td>
                             <td>
@@ -234,7 +237,7 @@
             <section>
 
                 <h2>
-                    Grid System: Media Queries &amp; Breakpoints
+                    Grid System: Media Queries &amp; Breakpoints (1)
                 </h2>
 
                 <table class="table-full">
@@ -250,10 +253,17 @@
                     <tbody>
                         <tr>
                             <td>
+                                <p>Default 4 breakpoints:</p>
                                 <ul>
-                                    <li>TODO</li>
+                                    <li>$small-range: (0em, 40em);</li>
+                                    <li>$medium-range: (40.063em, 64em);</li>
+                                    <li>$large-range: (64.063em, 90em);</li>
+                                    <li>$xlarge-range: (90.063em, 120em);</li>
+                                    <li>$xxlarge-range: (120.063em, 99999em);</li>
                                 </ul>
+
                             </td>
+
                             <td>
                                 <p>Default 3 breakpoints:</p>
                                 <ul>
@@ -261,15 +271,51 @@
                                     <li>992px</li>
                                     <li>1200px</li>
                                 </ul>
-                                <p>Which means, styling for 4 levels:</p>
-                                <ul>
-                                    <li>&lt; 768px</li>
-                                    <li>&ge; 768px</li>
-                                    <li>&ge; 992px</li>
-                                    <li>&ge; 1200px</li>
-                                </ul>
                             </td>
                         </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+
+                <h2>
+                    Grid System: Media Queries &amp; Breakpoints (2)
+                </h2>
+
+                <table class="table-full">
+                    <thead>
+                    <tr>
+                        <th>Foundation</th>
+                        <th>
+                            <a target="_blank" href="http://getbootstrap.com/css/#grid-media-queries">More</a>
+                            Bootstrap
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <p>4 breakpoints means, styling for 5 levels:</p>
+                            <ul>
+                                <li>&lt; 640px</li>
+                                <li>&ge; 641px</li>
+                                <li>&ge; 1025px</li>
+                                <li>&ge; 1441px</li>
+                                <li>&ge; 1921px</li>
+                            </ul>
+
+                        </td>
+
+                        <td>
+                            <p>3 breakpoints means, styling for 4 levels:</p>
+                            <ul>
+                                <li>&lt; 768px</li>
+                                <li>&ge; 768px</li>
+                                <li>&ge; 992px</li>
+                                <li>&ge; 1200px</li>
+                            </ul>
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
             </section>
@@ -290,7 +336,8 @@
                         <tr>
                             <td>
                                 <ul>
-                                    <li>TODO</li>
+                                    <li>Does not provide a certain breakpoint for column collapsing</li>
+                                    <li>Define it yourself</li>
                                 </ul>
                             </td>
                             <td>
@@ -323,8 +370,14 @@
                         <tr>
                             <td>
                                 <ul>
-                                    <li>TODO</li>
+                                    <li>.row acts as a container</li>
+                                    <li>
+                                        width is determined by a variable<br />
+                                        (default 1000px)
+                                    </li>
                                 </ul>
+                                <pre><code>@include grid-row(..)
+$row-width: rem-calc(1000); </code></pre>
                             </td>
                             <td>
                                 <pre><code>.container</code></pre>
@@ -436,7 +489,7 @@
                     </tbody>
                 </table>
             </section>
-            
+
             <section>
                 <h2>
                     Grid System: offset
@@ -467,7 +520,7 @@
                     </tbody>
                 </table>
             </section>
-            
+
             <section>
                 <h2>
                     Grid System: ordering
@@ -532,7 +585,7 @@
                     </tbody>
                 </table>
             </section>
-            
+
         </section>
         <!-- // grid system -->
 
