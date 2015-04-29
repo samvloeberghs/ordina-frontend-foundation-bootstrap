@@ -34,6 +34,14 @@
     font-size:0.9em;
 }
 
+#ordina ol{
+    list-style:lower-alpha;
+}
+
+#ordina ol li::marker{
+    color: #dddddd;
+}
+
 #ordina p{
     font-size:0.9em;
 }
@@ -43,7 +51,9 @@
 }
 
 #ordina .emphasize{
-    padding:70px 0 0 0;
+    padding:40px 0;
+    font-style:italic;
+    font-size:1.7em;
 }
 
 #ordina .emphasize h3,
@@ -67,16 +77,18 @@
     font-size:1.2em;
 }
 
-#ordina #sasslogo{
-    width:200px;
-    display:block;
-    margin:50px auto;
-}
-#ordina #sassglasses{
-    margin-top:250px;
-    width:250px;
-}
-
 #ordina pre code{
     max-height: none;
+}
+
+#thanks{
+    height:200px;
+    display:block;
+    margin:0 auto;
+}
+
+#thanks img{
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
 }
