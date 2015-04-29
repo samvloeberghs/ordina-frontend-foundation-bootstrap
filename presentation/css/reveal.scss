@@ -1313,4 +1313,112 @@ body {
 	visibility: hidden;
 }
 
+/*********************
+* ORDINA STYLES
+***********************/
 
+#ordina {
+
+    a img {
+        border: none;
+    }
+
+    img {
+
+        border: none;
+        display: block;
+        margin: 0 auto;
+
+        &#logo{
+            margin:{
+                bottom:40px;
+            }
+        }
+
+        &#zurb {
+            background: #ddd;
+            width: 50%;
+        }
+
+        &#bootstrap {
+            background: #ddd;
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+        background: url('../img/ordina.png') no-repeat top right;
+        border-bottom: 1px solid #555;
+        padding-bottom: 10px;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    ul, ol {
+        display: block;
+        margin-left: 50px;
+
+        li {
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+    }
+
+    ol {
+        list-style: lower-alpha;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .emphasize {
+        padding: 20px 0;
+        font-style: italic;
+        font-size: 1.5em;
+    }
+
+    pre {
+        background: none;
+        box-shadow: none;
+
+        code {
+            padding: 15px;
+            font-size: 1.2em;
+            max-height: none;
+        }
+
+    }
+    
+    .table-full {
+        width: 100%;
+
+        td {
+            font-size: 30px;
+            width: 50%;
+        }
+
+        ul,
+        ol {
+            margin: 30px 0 0 30px;
+        }
+    }
+}
+
+#thanks {
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+#thanks img {
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+}
