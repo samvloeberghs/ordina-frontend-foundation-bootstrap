@@ -41,6 +41,8 @@
 
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides" id="ordina">
+
+        <!-- start -->
         <section>
 
             <img src="img/ordina_l.png" alt="Ordina" class="logo"/>
@@ -57,6 +59,9 @@
             </p>
 
         </section>
+        <!-- // start -->
+
+        <!-- intro -->
         <section>
 
             <section>
@@ -125,128 +130,240 @@
             </section>
 
         </section>
+        <!-- // intro -->
+
+        <!-- hands on & comparisson -->
         <section>
-            
+
+            <h2>Hands-on &amp; comparisson</h2>
+            <ol>
+                <li>Grid System</li>
+                <li>Responsive tables</li>
+                <li>Utilities</li>
+                <li>Customisation: Foundation Sass vs Bootstrap LESS</li>
+                <li>
+                    JavaScript components: <br /><br />
+                    <ul>
+                        <li>Orbid vs Carousel</li>
+                        <li>Magellan vs Scrollspy</li>
+                        <li>Joyride vs Popover</li>
+                    </ul>
+                </li>
+            </ol>
+
+        </section>
+        <!-- // hands on & comparisson -->
+
+        <!-- grid system -->
+        <section>
+
             <section>
-                <h2>Hands-on &amp; comparisson</h2>
-                <ol>
-                    <li>Grid System</li>
-                    <li>Responsive tables</li>
-                    <li>Utilities</li>
-                    <li>Sass / Less</li>
-                    <li>Customisation: Foundation Sass vs Bootstrap Less</li>
-                    <li>Orbid vs Carousel</li>
-                    <li>Magellan vs Scrollspy</li>
-                    <li>Joyride vs Popover</li>
-                </ol>
-            </section>
-            
-            <section>
+
                 <h2>
                     Grid System
                 </h2>
-                
+
                 <table class="table-full">
                     <thead>
-                        <tr>
-                            <th>Foundation</th>
-                            <th>Bootstrap</th>
-                        </tr>
+                    <tr>
+                        <th>Foundation</th>
+                        <th>Bootstrap</th>
+                    </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>Responsive, fluid &amp; mobile first</li>
-                                    <li>Scales to 12 columns</li>
-                                    <li>Predefined classes &amp; mixins</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <ul>
-                                    <li>Responsive, fluid &amp; mobile first</li>
-                                    <li>Scales to 12 columns</li>
-                                    <li>Predefined classes &amp; mixins</li>
-                                </ul>
-                            </td>
-                        </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Responsive, fluid &amp; mobile first</li>
+                                <li>Scales to 12 columns</li>
+                                <li>Predefined classes &amp; mixins</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Responsive, fluid &amp; mobile first</li>
+                                <li>Scales to 12 columns</li>
+                                <li>Predefined classes &amp; mixins</li>
+                            </ul>
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
             </section>
-            
+
             <section>
+
                 <h2>
                     Grid System: row &amp column
                 </h2>
-                
+
                 <table class="table-full">
                     <thead>
-                        <tr>
-                            <th>Foundation</th>
-                            <th>Bootstrap</th>
-                        </tr>
+                    <tr>
+                        <th>Foundation</th>
+                        <th>Bootstrap</th>
+                    </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>TODO</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <ul>                                    
-                                    <li>
-                                        Predefined grid classes: <pre><code>.col-xs-4</code></pre></li>
-                                    <li>Columns must have a row directly as parent</li>
-                                    <li>Columns have a gutters of 30px (15px on each side)</li>
-                                    <li>Place rows in .container (fixed-width) or .container-fluid (full-width)</li>
-                                </ul>
-                            </td>
-                        </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>TODO</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Predefined grid classes:
+                                    <pre><code>.col-xs-4</code></pre>
+                                </li>
+                                <li>Columns must have a row directly as parent</li>
+                                <li>Columns have a gutters of 30px (15px on each side)</li>
+                                <li>Place rows in .container (fixed-width) or .container-fluid (full-width)</li>
+                            </ul>
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
+
             </section>
-            
+
             <section>
+
                 <h2>
                     Grid System: Media Queries &amp; Breakpoints
                 </h2>
-                
+
                 <table class="table-full">
                     <thead>
-                        <tr>
-                            <th>Foundation</th>
-                            <th>Bootstrap</th>
-                        </tr>
+                    <tr>
+                        <th>Foundation</th>
+                        <th>Bootstrap</th>
+                    </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>TODO</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <p>Default 3 breakpoints:</p>
-                                <ul>
-                                    <li>768px</li>
-                                    <li>992px</li>
-                                    <li>1200px</li>
-                                </ul>
-                                <p>Which means, styling for 4 levels:</p>
-                                <ul>
-                                    <li>&lt; 768px</li>
-                                    <li>&ge; 768px</li>
-                                    <li>&ge; 992px</li>
-                                    <li>&ge; 1200px</li>
-                                <ul>
-                            </td>
-                        </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>TODO</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p>Default 3 breakpoints:</p>
+                            <ul>
+                                <li>768px</li>
+                                <li>992px</li>
+                                <li>1200px</li>
+                            </ul>
+                            <p>Which means, styling for 4 levels:</p>
+                            <ul>
+                                <li>&lt; 768px</li>
+                                <li>&ge; 768px</li>
+                                <li>&ge; 992px</li>
+                                <li>&ge; 1200px</li>
+                            </ul>
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
             </section>
-            
+
         </section>
+        <!-- // grid system -->
+
+        <!-- utilities -->
+        <section>
+
+            <section>
+
+                <h2>
+                    Utilities
+                </h2>
+
+                <table class="table-full">
+                    <thead>
+                    <tr>
+                        <th>Foundation</th>
+                        <th>Bootstrap</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+        <!-- // utilities -->
+
+        <!-- // customisation -->
+        <section>
+            <section>
+
+                <h2>
+                    Customisation
+                </h2>
+
+                <table class="table-full">
+                    <thead>
+                    <tr>
+                        <th>Foundation</th>
+                        <th>Bootstrap</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+        <!-- // customisation -->
+
+        <!-- javascript components -->
+        <section>
+            <section>
+
+                <h2>
+                    JavaScript components
+                </h2>
+
+                <table class="table-full">
+                    <thead>
+                    <tr>
+                        <th>Foundation</th>
+                        <th>Bootstrap</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </section>
+        <!-- // javascript components -->
+
+        <!-- documentation -->
         <section>
             <h2>Documentation / links etc.</h2>
             <ul>
@@ -256,6 +373,9 @@
                 <li><a href="http://lesscss.org/">LESS website</a></li>
             </ul>
         </section>
+        <!-- // documentation -->
+
+        <!-- thanks -->
         <section>
 
             <img src="img/ordina_l.png" alt="Ordina" class="logo"/>
@@ -277,6 +397,8 @@
             </p>
 
         </section>
+        <!-- // thanks -->
+
     </div>
 
 </div>
