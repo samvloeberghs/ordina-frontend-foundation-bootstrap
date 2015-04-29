@@ -1329,7 +1329,7 @@ body {
         display: block;
         margin: 0 auto;
 
-        &#logo{
+        &.logo{
             margin:{
                 bottom:40px;
             }
@@ -1408,6 +1408,3 @@ body {
     -moz-border-radius: 500px;
     border-radius: 500px;
 }
-
-
-

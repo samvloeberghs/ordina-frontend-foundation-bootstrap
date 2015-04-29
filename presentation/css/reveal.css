@@ -1117,7 +1117,7 @@ body {
   border: none;
   display: block;
   margin: 0 auto; }
-  #ordina img#logo {
+  #ordina img.logo {
     margin-bottom: 40px; }
   #ordina img#zurb {
     background: #ddd;
