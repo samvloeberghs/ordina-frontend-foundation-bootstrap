@@ -1167,10 +1167,18 @@ body {
       font-size: 15px;
       background: #F4EFD8;
       float: right; }
+    #ordina .table-full th:first-child {
+      padding-right: 10px; }
+    #ordina .table-full th:last-child {
+      padding-left: 10px; }
   #ordina .table-full td {
     padding-left: 0;
     font-size: 30px;
     width: 50%; }
+    #ordina .table-full td:first-child {
+      padding-right: 10px; }
+    #ordina .table-full td:last-child {
+      padding-left: 10px; }
   #ordina .table-full ul, #ordina .table-full ol {
     margin: 30px 0 0 30px; }
 #ordina #thanks {

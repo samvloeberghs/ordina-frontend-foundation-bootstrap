@@ -1410,12 +1410,24 @@ body {
                 background: #F4EFD8;
                 float: right;
             }
+            &:first-child{
+                padding-right:10px;
+            }
+            &:last-child{
+                padding-left:10px;
+            }
         }
 
         td {
             padding-left: 0;
             font-size: 30px;
             width: 50%;
+            &:first-child{
+                padding-right:10px;
+            }
+            &:last-child{
+                padding-left:10px;
+            }
         }
 
         ul,
