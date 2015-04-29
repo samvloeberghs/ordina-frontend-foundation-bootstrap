@@ -1398,6 +1398,13 @@ body {
     
     .table-full {
         width: 100%;
+        
+        th a {
+            padding: 12px 15px;
+            font-size: 15px;
+            background: #F4EFD8;
+            float: right;
+        }
 
         td {
             font-size: 30px;
