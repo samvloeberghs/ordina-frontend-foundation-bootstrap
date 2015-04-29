@@ -5782,7 +5782,7 @@ th.hide-for-touch {
        * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
        * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
       */
-.print-only {
+.print-only, #examples > section#printstyles article section .alert-box {
   display: none !important; }
 
 @media print {
@@ -5792,9 +5792,9 @@ th.hide-for-touch {
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important; }
-  .show-for-print {
+  .show-for-print, #examples > section#printstyles article section .alert-box img {
     display: block; }
-  .hide-for-print {
+  .hide-for-print, #examples header, #examples footer, #examples > section#printstyles article img, #examples > section#printstyles article section table, #examples > section#printstyles article section img {
     display: none; }
   table.show-for-print {
     display: table !important; }
@@ -5836,18 +5836,18 @@ th.hide-for-touch {
     page-break-after: avoid; }
   .hide-on-print {
     display: none !important; }
-  .print-only {
+  .print-only, #examples > section#printstyles article section .alert-box {
     display: block !important; }
-  .hide-for-print {
+  .hide-for-print, #examples header, #examples footer, #examples > section#printstyles article img, #examples > section#printstyles article section table, #examples > section#printstyles article section img {
     display: none !important; }
-  .show-for-print {
+  .show-for-print, #examples > section#printstyles article section .alert-box img {
     display: inherit !important; } }
 
 /* Print visibility */
 @media print {
-  .show-for-print {
+  .show-for-print, #examples > section#printstyles article section .alert-box img {
     display: block; }
-  .hide-for-print {
+  .hide-for-print, #examples header, #examples footer, #examples > section#printstyles article img, #examples > section#printstyles article section table, #examples > section#printstyles article section img {
     display: none; }
   table.show-for-print {
     display: table !important; }
@@ -5875,45 +5875,132 @@ EXAMPLES
   display: none; }
   #examples > section#grid {
     display: block; }
-    #examples > section#grid header {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 0;
-      margin-bottom: 0;
-      max-width: 62.5rem;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      background-color: #eee; }
-      #examples > section#grid header:before, #examples > section#grid header:after {
-        content: " ";
-        display: table; }
-      #examples > section#grid header:after {
-        clear: both; }
-      #examples > section#grid header h1 {
+
+#examples header {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 0.5em;
+  background-color: #eee; }
+  #examples header:before, #examples header:after {
+    content: " ";
+    display: table; }
+  #examples header:after {
+    clear: both; }
+  #examples header h1 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; }
+    @media only screen and (min-width:48em) {
+      #examples header h1 {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem;
-        width: 25%;
+        width: 58.3333333333%;
         float: left;
-        background-image: url("http://placehold.it/250x90&text=logo");
-        background-repeat: no-repeat;
-        background-size: cover; }
-        #examples > section#grid header h1 a {
-          text-indent: -999px;
-          display: block; }
-      #examples > section#grid header nav {
+        font-size: 1.5em;
+        text-align: left; } }
+    #examples header h1 a {
+      color: #000; }
+  #examples header nav {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    text-align: center; }
+    @media only screen and (min-width:48em) {
+      #examples header nav {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem;
+        width: 41.6666666667%;
+        float: left;
+        text-align: right;
+        padding-top: 0.6em; } }
+    #examples header nav ul {
+      margin: 0;
+      padding: 0; }
+      #examples header nav ul li {
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+        margin-left: 0;
+        margin-right: 0.5em; }
+        #examples header nav ul li:last-child {
+          margin-right: 0; }
+        #examples header nav ul li a {
+          background: #fff;
+          display: block;
+          padding: 5px 10px;
+          color: #000; }
+#examples footer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 0.5em;
+  background-color: #eee; }
+  #examples footer:before, #examples footer:after {
+    content: " ";
+    display: table; }
+  #examples footer:after {
+    clear: both; }
+  #examples footer img {
+    display: block;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    float: none; }
+#examples > section {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 0.5em;
+  background-color: #eee; }
+  #examples > section:before, #examples > section:after {
+    content: " ";
+    display: table; }
+  #examples > section:after {
+    clear: both; }
+  #examples > section#grid > div {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    float: left; }
+    @media only screen and (min-width:48em) {
+      #examples > section#grid > div {
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
         width: 75%;
-        float: left;
-        text-align: right; }
-        #examples > section#grid header nav ul li {
-          display: inline-block;
-          margin-right: 15px; }
-          #examples > section#grid header nav ul li:last-child {
-            margin-right: 0; }
-    #examples > section#grid section {
+        right: 25%;
+        left: auto;
+        float: left; } }
+    #examples > section#grid > div > div {
       width: 100%;
       margin-left: auto;
       margin-right: auto;
@@ -5923,84 +6010,115 @@ EXAMPLES
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
-      #examples > section#grid section:before, #examples > section#grid section:after {
+      #examples > section#grid > div > div:before, #examples > section#grid > div > div:after {
         content: " ";
         display: table; }
-      #examples > section#grid section:after {
+      #examples > section#grid > div > div:after {
         clear: both; }
-      #examples > section#grid section > div {
-        position: relative;
+      #examples > section#grid > div > div article {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem;
-        width: 75%;
-        right: 25%;
-        left: auto;
-        float: left; }
-        #examples > section#grid section > div > div {
-          width: 100%;
-          margin-left: auto;
-          margin-right: auto;
-          margin-top: 0;
-          margin-bottom: 0;
-          max-width: 62.5rem;
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-          box-sizing: border-box; }
-          #examples > section#grid section > div > div:before, #examples > section#grid section > div > div:after {
-            content: " ";
-            display: table; }
-          #examples > section#grid section > div > div:after {
-            clear: both; }
-          #examples > section#grid section > div > div article {
+        width: 100%;
+        float: left;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em; }
+        @media only screen and (min-width:48em) {
+          #examples > section#grid > div > div article {
             padding-left: 0.9375rem;
             padding-right: 0.9375rem;
             width: 50%;
-            float: left; }
-            #examples > section#grid section > div > div article img {
-              float: right;
-              width: 35%;
-              margin-left: 10px;
-              margin-bottom: 10px; }
-            #examples > section#grid section > div > div article h1 {
-              font-size: 1.2em;
-              font-weight: bold; }
-            #examples > section#grid section > div > div article p {
-              font-size: 0.9em; }
-            #examples > section#grid section > div > div article time {
-              font-style: italic;
-              font-size: 0.8em;
-              display: block;
-              margin-bottom: 10px; }
-      #examples > section#grid section aside {
+            float: left; } }
+        #examples > section#grid > div > div article img {
+          float: right;
+          width: 35%;
+          margin-left: 0.5em;
+          margin-bottom: 0.5em; }
+        #examples > section#grid > div > div article h1 {
+          font-size: 1.2em;
+          font-weight: bold; }
+        #examples > section#grid > div > div article p {
+          font-size: 0.9em;
+          text-align: justify;
+          margin-bottom: 0; }
+        #examples > section#grid > div > div article time {
+          font-style: italic;
+          font-size: 0.8em;
+          display: block;
+          margin-bottom: 0.5em; }
+  #examples > section#grid aside {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; }
+    @media only screen and (min-width:48em) {
+      #examples > section#grid aside {
         position: relative;
         padding-left: 0.9375rem;
         padding-right: 0.9375rem;
         width: 25%;
         left: 75%;
         right: auto;
-        float: left; }
-    #examples > section#grid footer {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 0;
-      margin-bottom: 0;
-      max-width: 62.5rem;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      background-color: #eee; }
-      #examples > section#grid footer:before, #examples > section#grid footer:after {
-        content: " ";
-        display: table; }
-      #examples > section#grid footer:after {
-        clear: both; }
-      #examples > section#grid footer img {
-        display: block;
-        padding-left: 0.9375rem;
-        padding-right: 0.9375rem;
+        float: left; } }
+    #examples > section#grid aside ul {
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+      #examples > section#grid aside ul li {
+        margin-bottom: 0.5em; }
+        #examples > section#grid aside ul li a {
+          display: block;
+          background: #fff;
+          color: #000;
+          padding: 5px 10px; }
+        #examples > section#grid aside ul li:last-child {
+          margin-bottom: 0; }
+  #examples > section#printstyles article {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; }
+    #examples > section#printstyles article img {
+      float: right;
+      width: 35%;
+      margin-left: 0.5em;
+      margin-bottom: 0.5em; }
+    #examples > section#printstyles article h1 {
+      text-transform: uppercase;
+      font-size: 1.5em;
+      font-weight: bold; }
+    #examples > section#printstyles article time {
+      display: block;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-size: 0.8em; }
+    #examples > section#printstyles article > p {
+      font-style: italic; }
+    #examples > section#printstyles article section {
+      margin-top: 2em; }
+      #examples > section#printstyles article section img {
         width: 100%;
-        float: left;
-        margin-left: auto;
+        display: block;
         margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1.25rem; }
+      #examples > section#printstyles article section .alert-box p {
+        font-size: 1.5em;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0; }
+      #examples > section#printstyles article section .alert-box img {
+        display: block;
+        margin: 0 auto;
+        width: 40%;
         float: none; }
+  #examples > section#visibilityrules > div {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; }

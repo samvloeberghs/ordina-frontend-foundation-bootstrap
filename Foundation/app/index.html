@@ -6,6 +6,11 @@
 
     <title>Foundation examples</title>
 
+    <!-- build:css css/vendor.min.css -->
+    <link rel="stylesheet" href="css/responsive-tables.css">
+    <link rel="stylesheet" href="css/highlightjs/default.css">
+    <!-- endbuild -->
+
     <!-- build:css css/app.min.css -->
     <link rel="stylesheet" href="css/app.css">
     <!-- endbuild -->
@@ -15,92 +20,493 @@
 
     <section id="examples">
 
+      <header>
+
+        <h1>
+          <a href="">Workshop Foundation vs Bootstrap</a>
+        </h1>
+
+        <nav>
+          <ul>
+            <li><a href="" data-section="grid">Home</a></li>
+            <li><a href="" data-section="printstyles">Article</a></li>
+            <li><a href="" data-section="visibilityrules">Visibility</a></li>
+          </ul>
+        </nav>
+
+      </header>
+
       <section id="grid">
 
-        <header>
-
-          <h1><a href="">Website</a></h1>
-
+        <aside>
           <nav>
             <ul>
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 2</a></li>
-              <li><a href="">Link 3</a></li>
+              <li><a href="">Sublink 1</a></li>
+              <li><a href="">Sublink 2</a></li>
+              <li><a href="">Sublink 3</a></li>
             </ul>
           </nav>
+        </aside>
 
-        </header>
-
-        <section>
-
-          <aside>
-            <nav>
-              <ul>
-                <li><a href="">Sublink 1</a></li>
-                <li><a href="">Sublink 2</a></li>
-                <li><a href="">Sublink 3</a></li>
-              </ul>
-            </nav>
-          </aside>
-
+        <div>
           <div>
-            <div>
-              <article>
-                <img src="http://placehold.it/250x250&text=articleimage" alt="">
-                <h1>Dit is een article over CSS</h1>
-                <time datetime="2015-04-30T19:00+00:00">30 april 2015 om 19u00</time>
-                <p>Lorizzle ipsizzle dolor dope amizzle, consectetuer adipiscing elizzle. Nullam away pimpin', aliquet volutpat, suscipizzle quis, fo shizzle vizzle, arcu. Pellentesque eget tortor. Izzle erizzle. Fizzle izzle dolor dapibizzle turpizzle tempizzle its fo rizzle.</p>
-              </article>
-              <article>
-                <img src="http://placehold.it/250x250&text=articleimage" alt="">
-                <h1>Dit is een article over CSS</h1>
-                <time datetime="2015-04-30T19:00+00:00">30 april 2015 om 19u00</time>
-                <p>Lorizzle ipsizzle dolor dope amizzle, consectetuer adipiscing elizzle. Nullam away pimpin', aliquet volutpat, suscipizzle quis, fo shizzle vizzle, arcu. Pellentesque eget tortor. Izzle erizzle. Fizzle izzle dolor dapibizzle turpizzle tempizzle its fo rizzle.</p>
-              </article>
-            </div>
+            <article>
+              <img src="http://placehold.it/250x250&text=articleimage" alt="">
+              <h1>Dit is een article over CSS</h1>
+              <time datetime="2015-04-30T19:00+00:00">30 april 2015 om 19u00</time>
+              <p>Lorizzle ipsizzle dolor dope amizzle, consectetuer adipiscing elizzle. Nullam away pimpin', aliquet volutpat, suscipizzle quis, fo shizzle vizzle, arcu. Pellentesque eget tortor. Izzle erizzle. Fizzle izzle dolor dapibizzle turpizzle tempizzle its fo rizzle.</p>
+            </article>
+            <article>
+              <img src="http://placehold.it/250x250&text=articleimage" alt="">
+              <h1>Dit is een article over CSS</h1>
+              <time datetime="2015-04-30T19:00+00:00">30 april 2015 om 19u00</time>
+              <p>Lorizzle ipsizzle dolor dope amizzle, consectetuer adipiscing elizzle. Nullam away pimpin', aliquet volutpat, suscipizzle quis, fo shizzle vizzle, arcu. Pellentesque eget tortor. Izzle erizzle. Fizzle izzle dolor dapibizzle turpizzle tempizzle its fo rizzle.</p>
+            </article>
           </div>
-        </section>
-
-        <footer>
-          <img src="http://placehold.it/960x120&text=footerimage" alt="" />
-        </footer>
+        </div>
 
       </section>
 
       <section id="visibilityrules">
 
+        <div>
 
+          <p class="panel">
+            <strong class="show-for-small-only">This text is shown only on a small screen.</strong>
+            <strong class="show-for-medium-up">This text is shown on medium screens and up.</strong>
+            <strong class="show-for-medium-only">This text is shown only on a medium screen.</strong>
+            <strong class="show-for-large-up">This text is shown on large screens and up.</strong>
+            <strong class="show-for-large-only">This text is shown only on a large screen.</strong>
+            <strong class="show-for-xlarge-up">This text is shown on xlarge screens and up.</strong>
+            <strong class="show-for-xlarge-only">This text is shown only on an xlarge screen.</strong>
+            <strong class="show-for-xxlarge-up">This text is shown on xxlarge screens and up.</strong>
+          </p>
+
+          <hr>
+          <h3 id="show-by-screen-size">Show by Screen Size</h3>
+
+          <p>In this example, we use the <strong>show</strong> visibility classes to show certain strings of text based on
+            the device on which users view a page. If their browser meets the class&#39;s conditions, the element will be
+            shown. If not, it will be hidden.</p>
+
+          <hr />
+
+          <div class="row">
+            <div class="large-6 columns">
+              <h4>HTML</h4>
+    <pre><code class="html">
+      <p class="panel">
+      <strong class="show-for-small-only">This text is shown only on a small screen.</strong>
+      <strong class="show-for-medium-up">This text is shown on medium screens and up.</strong>
+      <strong class="show-for-medium-only">This text is shown only on a medium screen.</strong>
+      <strong class="show-for-large-up">This text is shown on large screens and up.</strong>
+      <strong class="show-for-large-only">This text is shown only on a large screen.</strong>
+      <strong class="show-for-xlarge-up">This text is shown on xlarge screens and up.</strong>
+      <strong class="show-for-xlarge-only">This text is shown only on an xlarge screen.</strong>
+      <strong class="show-for-xxlarge-up">This text is shown on xxlarge screens and up.</strong>
+    </p>
+    </code></pre>
+
+            </div>
+            <div class="large-6 columns">
+              <h4>Rendered HTML</h4>
+
+              <p class="panel">
+                <strong class="show-for-small-only">This text is shown only on a small screen.</strong>
+                <strong class="show-for-medium-up">This text is shown on medium screens and up.</strong>
+                <strong class="show-for-medium-only">This text is shown only on a medium screen.</strong>
+                <strong class="show-for-large-up">This text is shown on large screens and up.</strong>
+                <strong class="show-for-large-only">This text is shown only on a large screen.</strong>
+                <strong class="show-for-xlarge-up">This text is shown on xlarge screens and up.</strong>
+                <strong class="show-for-xlarge-only">This text is shown only on an xlarge screen.</strong>
+                <strong class="show-for-xxlarge-up">This text is shown on xxlarge screens and up.</strong>
+              </p>
+            </div>
+          </div>
+
+          <hr />
+
+          <h3 id="hide-by-screen-size">Hide by Screen Size</h3>
+
+          <p>This example shows the opposite: It uses the <strong>hide</strong> visibility classes to state which elements
+            should disappear based on your device&#39;s screen size or orientation. Users will see elements on every
+            browser <strong>except</strong> those that meet these conditions.</p>
+
+          <hr />
+
+          <div class="row">
+            <div class="large-6 columns">
+              <h4>HTML</h4>
+  <pre><code class="html">
+    <p class="panel">
+      <strong class="hide-for-small-only">You are <em>not</em> on a small screen.</strong>
+      <strong class="hide-for-medium-up">You are <em>not</em> on a medium, large, xlarge, or xxlarge
+        screen.</strong>
+      <strong class="hide-for-medium-only">You are <em>not</em> on a medium screen.</strong>
+      <strong class="hide-for-large-up">You are <em>not</em> on a large, xlarge, or xxlarge screen.</strong>
+      <strong class="hide-for-large-only">You are <em>not</em> on a large screen.</strong>
+      <strong class="hide-for-xlarge-up">You are <em>not</em> on an xlarge screen and up.</strong>
+      <strong class="hide-for-xlarge-only">You are <em>not</em> on an xlarge screen.</strong>
+      <strong class="hide-for-xxlarge-up">You are <em>not</em> on an xxlarge screen.</strong>
+    </p>
+  </code></pre>
+
+            </div>
+            <div class="large-6 columns">
+              <h4>Rendered HTML</h4>
+
+              <p class="panel">
+                <strong class="hide-for-small-only">You are <em>not</em> on a small screen.</strong>
+                <strong class="hide-for-medium-up">You are <em>not</em> on a medium, large, xlarge, or xxlarge
+                  screen.</strong>
+                <strong class="hide-for-medium-only">You are <em>not</em> on a medium screen.</strong>
+                <strong class="hide-for-large-up">You are <em>not</em> on a large, xlarge, or xxlarge screen.</strong>
+                <strong class="hide-for-large-only">You are <em>not</em> on a large screen.</strong>
+                <strong class="hide-for-xlarge-up">You are <em>not</em> on an xlarge screen and up.</strong>
+                <strong class="hide-for-xlarge-only">You are <em>not</em> on an xlarge screen.</strong>
+                <strong class="hide-for-xxlarge-up">You are <em>not</em> on an xxlarge screen.</strong>
+              </p>
+            </div>
+          </div>
+
+          <hr />
+
+          <h3 id="orientation-detection">Orientation Detection</h3>
+
+          <p>This straightforward example shows how two strings of text determine whether or not an element is visible in
+            different orientations. This will change on mobile devices when you rotate the device. On desktop, the
+            orientation is almost always reported as landscape.</p>
+
+          <hr />
+
+          <div class="row">
+            <div class="large-6 columns">
+              <h4>HTML</h4>
+    <pre><code class="html">
+      <p class="panel">
+        <strong class="show-for-landscape">You are in landscape orientation.</strong>
+        <strong class="show-for-portrait">You are in portrait orientation.</strong>
+      </p>
+    </code></pre>
+
+            </div>
+            <div class="large-6 columns">
+              <h4>Rendered HTML</h4>
+
+              <p class="panel">
+                <strong class="show-for-landscape">You are in landscape orientation.</strong>
+                <strong class="show-for-portrait">You are in portrait orientation.</strong>
+              </p>
+            </div>
+          </div>
+
+
+          <hr />
+
+          <h3 id="touch-detection">Touch Detection</h3>
+
+          <p>There are also visibility classes to hide or show content based on whether a device supports touch (as
+            determined by Modernizr).</p>
+
+          <hr />
+
+          <div class="row">
+            <div class="large-6 columns">
+              <h4>HTML</h4>
+    <pre><code class="html">
+      <p class="panel">
+        <strong class="show-for-touch">You are on a touch-enabled device.</strong>
+        <strong class="hide-for-touch">You are not on a touch-enabled device.</strong>
+      </p>
+    </code></pre>
+
+            </div>
+            <div class="large-6 columns">
+              <h4>Rendered HTML</h4>
+
+              <p class="panel">
+                <strong class="show-for-touch">You are on a touch-enabled device.</strong>
+                <strong class="hide-for-touch">You are not on a touch-enabled device.</strong>
+              </p>
+            </div>
+          </div>
+
+
+          <hr />
+          <h2 id="accessibility">Accessibility</h2>
+
+          <p>Adding <code>display: none</code> to an element will prevent screen readers from reading it. However, there
+            are techniques to hide content while still making it readable by screen readers.</p>
+
+          <hr />
+
+          <h3 id="show-for-screen-readers-only">Show for Screen Readers Only</h3>
+
+          <p>To visually hide content, while still allowing assistive technology to read it, add the class <code>show-for-sr</code>.
+          </p>
+
+          <hr />
+
+          <div class="row">
+            <div class="large-6 columns">
+              <h4>HTML</h4>
+  <pre><code class="html">
+    <p class="show-for-sr">This text can only be read by a screen reader.</p>
+  </code></pre>
+
+            </div>
+            <div class="large-6 columns">
+              <h4>Rendered HTML</h4>
+
+              <p class="show-for-sr">This text can only be read by a screen reader.</p>
+
+              <p>There&#39;s a line of text above this one, you just can&#39;t see it.</p>
+            </div>
+          </div>
+
+          <hr />
+
+          <h3 id="hide-for-screen-readers-only">Hide for Screen Readers Only</h3>
+
+          <p>To hide text from assistive technology, while still keeping it visible, add the attribute <code>aria-hidden=&quot;true&quot;</code>.
+            This doesn&#39;t affect how the element looks, but screen readers will skip over it.</p>
+
+          <hr />
+
+          <div class="row">
+            <div class="large-6 columns">
+              <h4>HTML</h4>
+              <pre><code class="html">
+                 <p aria-hidden="true">This text can be seen, but won&#39;t be read by a screen reader.</p>
+              </code></pre>
+
+            </div>
+            <div class="large-6 columns">
+              <h4>Rendered HTML</h4>
+
+              <p aria-hidden="true">This text can be seen, but won&#39;t be read by a screen reader.</p>
+            </div>
+          </div>
+
+          <h3 id="creating-skip-links">Creating Skip Links</h3>
+
+          <p>If your site has a lot of navigation, a screen reader will have to read through the entire navigation to get
+            to your site&#39;s content. To remedy this, you can add a &quot;skip link&quot; at the very top of your page,
+            which will send the user farther down the page, past the navigation when clicked on.</p>
+
+          <p>Use the class <code>show-on-focus</code> to hide an element, <em>except</em> when it has focus.</p>
+
+          <div class="row">
+            <div class="large-6 columns">
+              <h4>HTML</h4>
+  <pre><code class="html">
+    <p><a class="show-on-focus" href="#">Skip to Content</a></p>
+  </code></pre>
+
+            </div>
+            <div class="large-6 columns">
+              <h4>Rendered HTML</h4>
+
+              <p><a class="show-on-focus" href="#">Skip to Content</a></p>
+            </div>
+          </div>
+
+          <hr />
+
+          <h3 id="responsive-visibility">Responsive Visibility</h3>
+
+          <p>Finally, if you want to hide some content but still make it accessible for screen readers, use the <strong>hidden</strong>
+            visibility classes. Do not confuse these classes with <strong>hide</strong> visibility classes. Use these
+            classes in conjunction with the <strong>hide</strong> and <strong>show</strong> visibility classes to control
+            complex layouts while offering accessibility for those using screen readers.</p>
+
+          <hr />
+
+          <div class="row">
+            <div class="large-6 columns">
+              <h4>HTML</h4>
+  <pre><code class="html">
+    <p class="panel">
+      <strong class="hidden-for-small-only">You are <em>not</em> on a small screen.</strong>
+      <strong class="hidden-for-medium-up">You are <em>not</em> on a medium, large, xlarge, or xxlarge
+        screen.</strong>
+      <strong class="hidden-for-medium-only">You are <em>not</em> on a medium screen.</strong>
+      <strong class="hidden-for-large-up">You are <em>not</em> on a large, xlarge, or xxlarge screen.</strong>
+      <strong class="hidden-for-large-only">You are <em>not</em> on a large screen.</strong>
+      <strong class="hidden-for-xlarge-up">You are <em>not</em> on an xlarge screen and up.</strong>
+      <strong class="hidden-for-xlarge-only">You are <em>not</em> on an xlarge screen.</strong>
+      <strong class="hidden-for-xxlarge-up">You are <em>not</em> on an xxlarge screen.</strong>
+    </p>
+  </code></pre>
+
+            </div>
+            <div class="large-6 columns">
+              <h4>Rendered HTML</h4>
+
+              <p class="panel">
+                <strong class="hidden-for-small-only">You are <em>not</em> on a small screen.</strong>
+                <strong class="hidden-for-medium-up">You are <em>not</em> on a medium, large, xlarge, or xxlarge
+                  screen.</strong>
+                <strong class="hidden-for-medium-only">You are <em>not</em> on a medium screen.</strong>
+                <strong class="hidden-for-large-up">You are <em>not</em> on a large, xlarge, or xxlarge screen.</strong>
+                <strong class="hidden-for-large-only">You are <em>not</em> on a large screen.</strong>
+                <strong class="hidden-for-xlarge-up">You are <em>not</em> on an xlarge screen and up.</strong>
+                <strong class="hidden-for-xlarge-only">You are <em>not</em> on an xlarge screen.</strong>
+                <strong class="hidden-for-xxlarge-up">You are <em>not</em> on an xxlarge screen.</strong>
+              </p>
+            </div>
+          </div>
+
+
+          <p>To reverse the rules defined by <strong>hidden</strong>, use the <strong>visible</strong> visibility classes.
+          </p>
+
+          <div class="row">
+            <div class="large-6 columns">
+              <h4>HTML</h4>
+    <pre><code class="html">
+      <p class="panel">
+        <strong class="visible-for-small-only">This text is shown only on a small screen.</strong>
+        <strong class="visible-for-medium-up">This text is shown on medium screens and up.</strong>
+        <strong class="visible-for-medium-only">This text is shown only on a medium screen.</strong>
+        <strong class="visible-for-large-up">This text is shown on large screens and up.</strong>
+        <strong class="visible-for-large-only">This text is shown only on a large screen.</strong>
+        <strong class="visible-for-xlarge-up">This text is shown on xlarge screens and up.</strong>
+        <strong class="visible-for-xlarge-only">This text is shown only on an xlarge screen.</strong>
+        <strong class="visible-for-xxlarge-up">This text is shown on xxlarge screens and up.</strong>
+      </p>
+    </code></pre>
+
+            </div>
+            <div class="large-6 columns">
+              <h4>Rendered HTML</h4>
+
+              <p class="panel">
+                <strong class="visible-for-small-only">This text is shown only on a small screen.</strong>
+                <strong class="visible-for-medium-up">This text is shown on medium screens and up.</strong>
+                <strong class="visible-for-medium-only">This text is shown only on a medium screen.</strong>
+                <strong class="visible-for-large-up">This text is shown on large screens and up.</strong>
+                <strong class="visible-for-large-only">This text is shown only on a large screen.</strong>
+                <strong class="visible-for-xlarge-up">This text is shown on xlarge screens and up.</strong>
+                <strong class="visible-for-xlarge-only">This text is shown only on an xlarge screen.</strong>
+                <strong class="visible-for-xxlarge-up">This text is shown on xxlarge screens and up.</strong>
+              </p>
+            </div>
+          </div>
+
+        </div>
 
       </section>
 
       <section id="printstyles">
 
+        <article>
 
+          <h1>Dit is een article over CSS</h1>
+          <time datetime="2015-04-30T19:00+00:00">30 april 2015 om 19u00</time>
+          <img src="http://placehold.it/250x175&text=thisimageishiddenonprint" alt="" />
+          <p>Lorizzle ipsizzle dolor dope amizzle, consectetuer adipiscing elizzle. Nullam away pimpin', aliquet volutpat, suscipizzle quis, fo shizzle vizzle, arcu. Pellentesque eget tortor. Izzle erizzle. Fizzle izzle dolor dapibizzle turpizzle tempizzle its fo rizzle.</p>
+
+          <section>
+            <p>Lorizzle ipsizzle dolor dope amizzle, consectetuer adipiscing elizzle. <strong>Nullam away pimpin</strong>', aliquet volutpat, suscipizzle quis, fo shizzle vizzle, arcu. Pellentesque eget tortor. Izzle erizzle. Fizzle izzle dolor dapibizzle turpizzle tempizzle its fo rizzle.</p>
+            <p>
+              Lorizzle <em>ipsizzle dolor</em> dope amizzle, consectetuer <a href="http://ordina.be">adipiscing elizzle</a>. Nullam away pimpin', aliquet volutpat, suscipizzle quis, fo shizzle vizzle, arcu. Pellentesque eget tortor. Izzle erizzle. Fizzle izzle dolor dapibizzle turpizzle tempizzle its fo rizzle.
+              Lorizzle <em>ipsizzle dolor</em> dope amizzle, consectetuer <strong>adipiscing elizzle</strong>. Nullam away pimpin', aliquet volutpat, suscipizzle quis, fo shizzle vizzle, arcu. Pellentesque eget tortor. Izzle erizzle. Fizzle izzle dolor dapibizzle turpizzle tempizzle its fo rizzle.
+            </p>
+
+            <img src="http://placehold.it/960x90&text=thisimageishiddenonprint" alt="" />
+
+            <div class="alert-box alert">
+              <p>
+                You mad? Printing so much is bad for the environment!
+              </p>
+              <img src="images/youmad.jpg" alt="you mad?!" />
+            </div>
+
+            <p>
+              Lorizzle ipsizzle dolor dope amizzle, consectetuer adipiscing elizzle. Nullam away pimpin', aliquet volutpat, suscipizzle quis, fo shizzle vizzle, arcu. Pellentesque eget tortor. Izzle erizzle. Fizzle izzle dolor dapibizzle turpizzle tempizzle its fo rizzle.
+              Lorizzle <em>ipsizzle dolor</em> dope amizzle, consectetuer adipiscing elizzle. Nullam away pimpin', aliquet volutpat, suscipizzle quis, fo shizzle vizzle, arcu. Pellentesque eget tortor. Izzle erizzle. Fizzle izzle dolor dapibizzle turpizzle tempizzle its fo rizzle.
+              Lorizzle <em>ipsizzle dolor</em> dope amizzle, consectetuer adipiscing elizzle. Nullam away pimpin', aliquet volutpat, suscipizzle quis, fo shizzle vizzle, arcu. Pellentesque eget tortor. Izzle erizzle. Fizzle izzle dolor dapibizzle turpizzle tempizzle its fo rizzle.
+            </p>
+
+            <table class="responsive">
+              <tbody>
+              <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+                <th>Header 4</th>
+                <th>Header 5</th>
+                <th>Header 6</th>
+                <th>Header 7</th>
+                <th>Header 8</th>
+              </tr>
+              <tr>
+                <td>row 1, cell 1</td>
+                <td>row 1, cell 2</td>
+                <td>row 1, cell 3</td>
+                <td>row 1, cell 4</td>
+                <td>row 1, cell 5</td>
+                <td>row 1, cell 6</td>
+                <td>row 1, cell 7</td>
+                <td>row 1, cell 8</td>
+              </tr>
+              <tr>
+                <td>row 2, cell 1</td>
+                <td>row 2, cell 2</td>
+                <td>row 2, cell 3</td>
+                <td>row 2, cell 4</td>
+                <td>row 2, cell 5</td>
+                <td>row 2, cell 6</td>
+                <td>row 2, cell 7</td>
+                <td>row 2, cell 8</td>
+              </tr>
+              <tr>
+                <td>row 3, cell 1</td>
+                <td>row 3, cell 2</td>
+                <td>row 3, cell 3</td>
+                <td>row 3, cell 4</td>
+                <td>row 3, cell 5</td>
+                <td>row 3, cell 6</td>
+                <td>row 3, cell 7</td>
+                <td>row 3, cell 8</td>
+              </tr>
+              <tr>
+                <td>row 4, cell 1</td>
+                <td>row 4, cell 2</td>
+                <td>row 4, cell 3</td>
+                <td>row 4, cell 4</td>
+                <td>row 4, cell 5</td>
+                <td>row 4, cell 6</td>
+                <td>row 4, cell 7</td>
+                <td>row 4, cell 8</td>
+              </tr>
+              </tbody>
+            </table>
+
+          </section>
+
+        </article>
 
       </section>
 
-      <section id="orbit">
-
-
-
-      </section>
-
-      <section id="magellan">
-
-
-
-      </section>
-
-      <section id="joyride">
-
-
-
-      </section>
+      <footer>
+        <img src="http://placehold.it/960x120&text=footerimage" alt="" />
+      </footer>
 
     </section>
 
-    <!-- build:js js/app.min.js -->
+    <!-- build:js js/vendor.min.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/fastclick/lib/fastclick.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+    <script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/responsive-tables.js"></script>
+    <script src="js/highlight.js"></script>
+    <!-- endbuild -->
+    <!-- build:js js/app.min.js -->
     <script src="js/app.js"></script>
     <!-- endbuild -->
 
