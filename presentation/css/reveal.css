@@ -1158,12 +1158,16 @@ body {
     max-height: none; }
 #ordina .table-full {
   width: 100%; }
-  #ordina .table-full th a {
-    padding: 12px 15px;
-    font-size: 15px;
-    background: #F4EFD8;
-    float: right; }
+  #ordina .table-full th {
+    padding-left: 0;
+    padding-right: 0; }
+    #ordina .table-full th a {
+      padding: 12px 15px;
+      font-size: 15px;
+      background: #F4EFD8;
+      float: right; }
   #ordina .table-full td {
+    padding-left: 0;
     font-size: 30px;
     width: 50%; }
   #ordina .table-full ul, #ordina .table-full ol {
