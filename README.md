@@ -55,4 +55,6 @@ run the presentation using
 
     grunt serve
 
+contains the PDF version of the presentation
 
+    foundation-vs-bootstrap.pdf
